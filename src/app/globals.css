@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-prompt), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -9,6 +13,11 @@
     @apply text-slate-800 bg-white antialiased selection:bg-cyan-100 selection:text-cyan-900;
     background-image: radial-gradient(circle at 1px 1px, #f1f5f9 1px, transparent 0);
     background-size: 32px 32px;
+  }
+
+  /* Improve Prompt font readability by increasing spacing for bold texts and headings */
+  h1, h2, h3, h4, h5, h6, b, strong, .font-medium, .font-semibold, .font-bold, .font-extrabold {
+    letter-spacing: 0.025em;
   }
 }
 

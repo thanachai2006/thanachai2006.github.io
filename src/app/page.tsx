@@ -1,10 +1,11 @@
-import Hero from './components/Hero';
-import About from './components/About';
-import Education from './components/Education';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Education from "./components/Education";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Activities from "./components/Activities";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Education />
       <Skills />
       <Projects />
+      <Activities />
       <Contact />
       <Footer />
     </div>

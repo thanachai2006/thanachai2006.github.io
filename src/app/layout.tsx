@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Prompt, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const promptFont = Prompt({
+  variable: "--font-prompt",
+  subsets: ["latin", "thai"],
+  weight: ["300", "400", "500", "700", "900"],
 });
 
 const geistMono = Geist_Mono({
@@ -13,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Thanachai",
-  description: "Personal portfolio website for Thanachai Ngamwilairattana",
+  title: "Thanachai Ngamwilairattana",
+  description: "Personal website of Thanachai Ngamwilairattana",
 };
 
 export default function RootLayout({
@@ -23,12 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="en" className={`${promptFont.variable} ${geistMono.variable}`}>
+      <body className={`${promptFont.className} antialiased`}>{children}</body>
     </html>
   );
 }

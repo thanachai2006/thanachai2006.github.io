@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -12,17 +12,18 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Education', href: '#education' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Education", href: "#education" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Activities", href: "#activities" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
@@ -32,12 +33,15 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
         className={`w-full max-w-4xl flex items-center justify-between px-6 py-3 rounded-2xl transition-all duration-300 ${
-          isScrolled 
-            ? 'bg-white/80 backdrop-blur-md shadow-lg shadow-slate-200/50 border border-slate-200/50' 
-            : 'bg-transparent'
+          isScrolled
+            ? "bg-white/80 backdrop-blur-md shadow-lg shadow-slate-200/50 border border-slate-200/50"
+            : "bg-transparent"
         }`}
       >
-        <a href="#home" className="text-xl font-bold text-indigo-600 tracking-tight">
+        <a
+          href="#home"
+          className="text-xl font-bold text-indigo-600 tracking-tight"
+        >
           THANACHAI<span className="text-slate-900">.</span>
         </a>
 
@@ -55,7 +59,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="md:hidden p-2 text-slate-600 hover:text-indigo-600 transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
