@@ -13,7 +13,6 @@ export default function Activities() {
         />
       ),
       title: "เล่นเกม (Gaming)",
-      description: "ชอบเล่นเกมแนววางแผนและผจญภัย การวางแผนและการคิดวิเคราะห์",
       wrapperClass:
         "group bg-white/80 p-8 rounded-3xl border-2 border-purple-100 hover:border-purple-400 transition-all duration-300 text-center flex flex-col items-center relative overflow-hidden hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-2 z-10",
       topBarClass:
@@ -22,8 +21,6 @@ export default function Activities() {
         "mb-6 p-5 rounded-2xl bg-purple-50 transition-all duration-300 text-purple-600 group-hover:bg-linear-to-br group-hover:from-purple-500 group-hover:to-purple-600 group-hover:text-white shadow-sm group-hover:shadow-xl group-hover:shadow-purple-300 group-hover:scale-110",
       titleClass:
         "text-sm font-semibold mb-3 text-purple-600 uppercase tracking-[0.2em] transition-colors",
-      textClass:
-        "text-slate-800 text-base md:text-lg tracking-tight break-words",
     },
     {
       icon: (
@@ -33,7 +30,6 @@ export default function Activities() {
         />
       ),
       title: "กีฬาและการแข่งขัน (Sports)",
-      description: "กีฬาบาสเกตบอล ฟุตบอล และวอลเลย์บอล",
       wrapperClass:
         "group bg-white/80 p-8 rounded-3xl border-2 border-orange-100 hover:border-orange-400 transition-all duration-300 text-center flex flex-col items-center relative overflow-hidden hover:shadow-2xl hover:shadow-orange-500/20 hover:-translate-y-2 z-10",
       topBarClass:
@@ -42,15 +38,12 @@ export default function Activities() {
         "mb-6 p-5 rounded-2xl bg-orange-50 transition-all duration-300 text-orange-600 group-hover:bg-linear-to-br group-hover:from-orange-500 group-hover:to-orange-600 group-hover:text-white shadow-sm group-hover:shadow-xl group-hover:shadow-orange-300 group-hover:scale-110",
       titleClass:
         "text-sm font-semibold mb-3 text-orange-600 uppercase tracking-[0.2em] transition-colors",
-      textClass:
-        "text-slate-800 text-base md:text-lg tracking-tight break-words",
     },
     {
       icon: (
         <Music size={24} className="group-hover:text-white transition-colors" />
       ),
       title: "ฟังเพลง (Music)",
-      description: "ฟังเพลงเพื่อผ่อนคลายและสร้างแรงบันดาลใจในการทำงาน",
       wrapperClass:
         "group bg-white/80 p-8 rounded-3xl border-2 border-pink-100 hover:border-pink-400 transition-all duration-300 text-center flex flex-col items-center relative overflow-hidden hover:shadow-2xl hover:shadow-pink-500/20 hover:-translate-y-2 z-10",
       topBarClass:
@@ -59,8 +52,6 @@ export default function Activities() {
         "mb-6 p-5 rounded-2xl bg-pink-50 transition-all duration-300 text-pink-600 group-hover:bg-linear-to-br group-hover:from-pink-500 group-hover:to-pink-600 group-hover:text-white shadow-sm group-hover:shadow-xl group-hover:shadow-pink-300 group-hover:scale-110",
       titleClass:
         "text-sm font-semibold mb-3 text-pink-600 uppercase tracking-[0.2em] transition-colors",
-      textClass:
-        "text-slate-800 text-base md:text-lg tracking-tight break-words",
     },
     {
       icon: (
@@ -70,7 +61,6 @@ export default function Activities() {
         />
       ),
       title: "อ่านหนังสือ (Reading)",
-      description: "อ่านหนังสือเพื่อพัฒนาตัวเอง",
       wrapperClass:
         "group bg-white/80 p-8 rounded-3xl border-2 border-emerald-100 hover:border-emerald-400 transition-all duration-300 text-center flex flex-col items-center relative overflow-hidden hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-2 z-10",
       topBarClass:
@@ -79,8 +69,6 @@ export default function Activities() {
         "mb-6 p-5 rounded-2xl bg-emerald-50 transition-all duration-300 text-emerald-600 group-hover:bg-linear-to-br group-hover:from-emerald-500 group-hover:to-emerald-600 group-hover:text-white shadow-sm group-hover:shadow-xl group-hover:shadow-emerald-300 group-hover:scale-110",
       titleClass:
         "text-sm font-semibold mb-3 text-emerald-600 uppercase tracking-[0.2em] transition-colors",
-      textClass:
-        "text-slate-800 text-base md:text-lg tracking-tight break-words",
     },
   ];
 
@@ -127,7 +115,6 @@ export default function Activities() {
                   : activity.icon}
               </div>
               <h3 className={activity.titleClass}>{activity.title}</h3>
-              <p className={activity.textClass}>{activity.description}</p>
             </motion.div>
           ))}
         </div>

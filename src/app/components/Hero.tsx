@@ -196,12 +196,12 @@ export default function Hero() {
               <span>Profile</span>
             </motion.div>
 
-            <h1 className="text-6xl xs:text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[9rem] 2xl:text-[10rem] font-bold mb-4 tracking-tighter leading-none">
+            <h1 className="text-6xl xs:text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[9rem] 2xl:text-[10rem] font-bold mb-8 tracking-tighter leading-tight">
               <span className="bg-clip-text text-transparent bg-linear-to-br from-slate-800 via-cyan-600 to-blue-600">
                 Mr.Thanachai
               </span>
               <br />
-              <span className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-light text-slate-600 uppercase tracking-[0.2em] mt-2 sm:mt-4 block wrap-break-word">
+              <span className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-light text-slate-600 uppercase tracking-[0.2em] mt-6 sm:mt-8 block wrap-break-word">
                 Ngamwilairattana
               </span>
             </h1>
